@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>formulario</title>
+</head>
+<body>
+    <form action="#" name="Formulario" >
+        <h1 style="text-align: center">Formulario</h1>
+        <fieldset>
+            <fieldset>
+                <legend>Personal info</legend>
+                <label for="Name">First Name:</label>
+                <input type="text" name= "Name" placeholder="Juan" pattern="[a-zA-Z]+" title="Just letters" required/> <br>
+                <label for="apellido">Last Name:</label>
+                <input type="text" name = "apellido" placeholder="Perez" pattern="[a-zA-Z]+" title="Just letters" required/> <br>
+                <label for="animal">Favorite animal:</label>
+                <input type="text" name= "animal" placeholder="Hormiga" pattern="[a-zA-Z]+" title="Just letters" required/> <br>
+            </fieldset>
+            <fieldset>
+                <legend>Account</legend>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="juanperez@yahoo.com" required/> <br>
+                <label for="password">Password:</label>
+                <input type="password" name= "pass1" pattern=".{6,}" title="Six or more characters" required/> <br>
+                <label for="password">Verify Password:</label>
+                <input type="password" name ="pass2" pattern=".{6,}" title="Six or more characters" required/> <br>
+            </fieldset>
+            <fieldset>
+                <legend>Contact</legend>
+                <label for="address">Address:</label>
+                <input type="text" name="address" required/> <br>
+                <label for="city">City:</label>
+                <input type="text" name= "city" pattern="[a-zA-Z]+" title="Just letters" required/> <br>
+                <label for="country">Country:</label>
+                <input type="text" name= "country" pattern="[a-zA-Z]+" title="Just letters" required/> <br>
+                <label for="numero">Phone Number:</label>
+                <input type="text" name ="contacto" pattern="[0-9]{8}" title = "Just 8 numbers / Just numbers" required/> <br>
+            </fieldset>
+        </fieldset>
+    <input type="submit" value="Send">    
+    </form>
+</body>
+</html>
